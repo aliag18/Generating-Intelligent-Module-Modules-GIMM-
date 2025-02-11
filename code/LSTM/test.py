@@ -1,7 +1,7 @@
 import sys
  
 # setting path
-sys.path.append('../../data')
+sys.path.append('../../LSTM')
 from data import *
 
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, OneHotEncoder
