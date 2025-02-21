@@ -169,12 +169,14 @@ plt.figure(figsize=(5,5))
 plt.hist(error, bins = 50)
 plt.xlabel("Prediction Absolute Error")
 _ = plt.ylabel("Count")
+plt.show()
 
 # Plot Prediction Error
 plt.figure(figsize=(5,5))
 plt.hist(rerror, bins = 50)
 plt.xlabel("Prediction Error (%)")
 _ = plt.ylabel("Count")
+plt.show()
 
 # Plot True Value vs Predictions
 plt.figure(figsize=(10,5))
@@ -182,13 +184,14 @@ a = plt.axes(aspect='equal')
 plt.scatter(test_labels['actual'], predictions)
 plt.xlabel('True Value')
 plt.ylabel('Predictions')
-lims = [25000, 80000]
+lims = [0, 50]
 plt.xlim(lims)
 plt.ylim(lims)
 _ = plt.plot(lims, lims)
+plt.show()
 
 end = datetime.datetime.now()
-# print('total time:', end-start)
+print('total time:', end-start)
 
 
 save_model(model,'Models/LSTM_model_3.0.1.h5',include_optimizer=True)
