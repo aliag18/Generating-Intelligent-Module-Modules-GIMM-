@@ -1,15 +1,5 @@
-# ML_ERCOT-Load_Prediction
-
-Multiple ML models are implemented for ERCOT short-term load forecasting, using weather and time features.
-
-## ML Models:
-* Fully-connected neural network (FCNN)
-* Support vector machine (SVM)
-* Long short-term memory (LSTM)
-* Long-term recurrent convolutional network (LRCN)
-
-Multiple variations of the above ML models are trained and evaluated.
-
+# Model for increased renewable energy use
+Theses codes are designed to increase the share of renewable energy used in remote communities. They were designed as a capstone project through Simon Fraser University's Sustainable Energy Engineering Program. This project was designed for Hedgehog Technologies and are configured for use with Nimba's historical load data. These codes include an LSTM model for load prediction, solar module to determine anticipated solar power production, and a controller to regulate renewable energy use. 
 
 ## Input Features:
 * Weather information
@@ -24,41 +14,35 @@ Multiple variations of the above ML models are trained and evaluated.
 
 
 ## Data Sources:
-Raw ERCOT load data are from ERCOT website: https://www.ercot.com/
-
-Raw weather data are from the Phase 2 of the North American Lan Data Assimilation System (NLDAS-2).
-
-Please refer to the paper below for more details about the data sources.
+Weather data taken from: https://open-meteo.com/ 
 
 
-## Reference:
-Initial reference codes: https://rpglab.github.io/resources/ML-Price-Prdctn/
+## Code:
+The code and supporting documentation can be found here: https://github.com/aliag18/Generating-Intelligent-Module-Modules-GIMM-
 
 
-## Citation:
-If you use any of our codes/data for your work, please cite the following paper as your reference:
+## The Capstone Team:
+The capstone team who worked on these codes:
+Alia Gola
+Angel Niet
+Mina Pavlovic
+Gurjit Thandi
+
+
+## References:
+The LSTM model is based of the work and models described below. 
+This work was used under the terms of the <a class="off" href="https://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Attribution 4.0 (CC BY 4.0) license.</a>
 
 Jonathan Yang, Mingjian Tuo, Jin Lu, and Xingpeng Li, “Analysis of Weather and Time Features in Machine Learning-aided ERCOT Load Forecasting”, *arXiv*, Oct. 2023.
 
 Paper website: https://rpglab.github.io/papers/JonathanY_ML-LF/
 
-
-## Contributions:
-Jonathan developed the codes, trained/evaluated the ML models, and analyzed the results. Mingjian provided guidance for ML structure and helped with code debugging. Jin processed and provided the ERCOT load data and the weather data. Xingpeng supervised this work and analyzed the results. All authors contributed to the paper writing and revisions.
-
-
-## Contact:
+The author's of this paper can be  at:
 Dr. Xingpeng Li
-
 University of Houston
-
 Email: xli83@central.uh.edu
-
 Website: <a class="off" href="/"  target="_blank">https://rpglab.github.io/</a>
 
-
-## License:
-This work is licensed under the terms of the <a class="off" href="https://creativecommons.org/licenses/by/4.0/"  target="_blank">Creative Commons Attribution 4.0 (CC BY 4.0) license.</a>
 
 
 ## Disclaimer:
